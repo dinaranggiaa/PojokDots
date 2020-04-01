@@ -1,4 +1,4 @@
-<!-- <script>setInterval('autoRefresh()', 10000);</script> -->
+<script>setInterval('autoRefresh()', 10000);</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -118,6 +118,33 @@
 
         </div>
 
+        <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                <a class="dropdown-item" href="#">Dashboard</a>
+                <a class="dropdown-item" href="#">Profile</a>
+            </div>
+        <div class="row" id="body-row">
+          <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-dashboard fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Dashboard</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu1' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Charts</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Reports</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Tables</span>
+                    </a>
+                </div>
+          </div>
+        </div>
+
         <p>
           <?php echo "<a href='".base_url()."Petugas/logout'>Logout</a>"; ?>
         </p>
@@ -128,6 +155,8 @@
     <div class="center">
       <div class="header"><h1>SISTEM INFORMASI POJOK DOTS | KLINIK UTAMA JRC</h1></div>
     </div>
+
+
 
       <script>
       var dropdown = document.getElementsByClassName("dropdown");
